@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    tools:context=".DetailActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dtl_avatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        app:civ_border_color="#FF909090"
+        app:civ_border_width="2dp" />
+    <TextView
+        android:id="@+id/dtl_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/dtl_avatar"
+        android:text="name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/dtl_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dtl_name"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:textSize="18sp"
+        android:maxLines="3"
+        android:text="username"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/dtl_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dtl_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="43dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="company" />
+
+    <TextView
+        android:id="@+id/dtl_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dtl_company"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="location" />
+
+    <TextView
+        android:id="@+id/dtl_repository"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/dtl_followers"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@id/dtl_followers"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="repository" />
+
+    <TextView
+        android:id="@+id/dtl_followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dtl_location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="23dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="followers" />
+
+    <TextView
+        android:id="@+id/dtl_following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/dtl_followers"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="following"
+        android:layout_alignBaseline="@id/dtl_followers"/>
+
+
+</RelativeLayout>
